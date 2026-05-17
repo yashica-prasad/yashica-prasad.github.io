@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Image unavailable</title>
+  <desc id="desc">Placeholder used when blog image assets are missing from the repository.</desc>
+  <rect width="1200" height="675" fill="#0f172a" />
+  <rect x="32" y="32" width="1136" height="611" fill="none" stroke="#22c55e" stroke-opacity="0.5" stroke-width="2" />
+  <g fill="#22c55e" font-family="monospace" text-anchor="middle">
+    <text x="600" y="320" font-size="44">Image Unavailable</text>
+    <text x="600" y="370" font-size="24" fill-opacity="0.85">
+      Source file is not included in this repository.
+    </text>
+  </g>
+</svg>
