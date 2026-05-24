@@ -10,70 +10,121 @@ import { siteConfig } from "@/config";
 
 export default function AboutPage() {
   const education = {
-    school: "Tech University",
-    degree: "Bachelor of Science in Computer Science",
-    year: "Expected May 2027",
-    gpa: "3.8/4.0",
+    school: "University of California, Los Angeles",
+    degree: "Bachelor of Science, Computer Science and Engineering",
+    year: "Expected June 2026",
+    //GPA: "3.8/4.0",
     relevant: [
-      "Network Security",
-      "Cryptography",
+      "Data Structures and Algorithms",
       "Operating Systems",
-      "Algorithms",
+      "Computer Architecture",
+      "Computer Networks",
       "Database Systems",
+      "Software Engineering",
+      "Machine Learning", 
+      "Computer Security (ML Security focus)",     
+      "Computer Graphics",
     ],
   };
 
   const certifications = [
-    { name: "eJPT", issuer: "eLearnSecurity", status: "In Progress" },
-    { name: "CompTIA Security+", issuer: "CompTIA", status: "Planned 2026" },
-    { name: "OSCP", issuer: "Offensive Security", status: "Planned 2027" },
+    {
+      name: "Google IT Support Professional Certificate",
+      issuer: "Coursera / Google",
+      status: "Issued Oct 2020"
+    },
+    {
+      name: "Capstone: Retrieving, Processing, and Visualizing Data with Python",
+      issuer: "Coursera",
+      status: "Issued Feb 2020"
+    },
+    {
+      name: "Professional Certificate in Machine Learning and Artificial Intelligence",
+      issuer: "UC Berkeley Online",
+      status: "Enrolled — Launches Jun 25, 2026"
+    },
   ];
 
   const skills = {
-    Security: [
-      "Penetration Testing",
-      "Vulnerability Assessment",
-      "Network Security",
-      "Cryptography",
-      "Reverse Engineering",
-    ],
-    Languages: [
+    ProgrammingLanguages: [
+      "C",
+      "C++",
       "Python",
-      "Go",
-      "JavaScript/TypeScript",
-      "C/C++",
-      "Bash",
+      "JavaScript",
+      "TypeScript",
+      "Java"
     ],
-    "Tools & Frameworks": [
-      "Metasploit",
-      "Burp Suite",
-      "Wireshark",
-      "Nmap",
-      "React",
-      "Node.js",
+    Systems: [
+      "Linux",
+      "Windows Administration",
+      "PowerShell",
+      "Operating Systems",
+      "Computer Networking"
     ],
-    Technologies: ["Docker", "Linux", "Git", "AWS", "PostgreSQL"],
+    Security: [
+      "Computer Security",
+      "Access Control",
+      "Endpoint Troubleshooting",
+      "Security Procedures",
+      "Network Troubleshooting"
+    ],
+    Concepts: [
+      "Version Control",
+      "Data Structures",
+      "Algorithms",
+      "Distributed Systems",
+      "Machine Learning",
+      "Machine Learning Security"
+    ],
+    Technologies: [
+      "Git",
+      "Docker",
+      "AWS",
+      "PostgreSQL",
+      "Three.js",
+      "MERN Stack"
+    ],
   };
 
   const experience = [
     {
-      role: "Security Research Intern",
-      company: "CyberDefense Labs",
-      period: "Summer 2026",
+      role: "Computer Support Technician",
+      company: "UCLA Student Affairs IT",
+      period: "Apr 2025 - Present",
       description: [
-        "Conducted vulnerability assessments on web applications",
-        "Developed automated security scanning tools in Python",
-        "Participated in red team exercises and penetration testing",
+        "Support faculty, staff, and students in a Windows-based environment, resolving hardware, operating system, account, and network issues.",
+        "Use Windows administration tools and PowerShell scripts to diagnose and remediate high-priority technical incidents.",
+        "Follow security and access-control procedures while handling sensitive user systems and credentials.",
       ],
     },
     {
-      role: "CTF Team Captain",
-      company: "University Security Club",
-      period: "2025 - Present",
+      role: "Naval ROTC Midshipman",
+      company: "UCLA Bruin Battalion",
+      period: "Jun 2023 - Apr 2025",
       description: [
-        "Lead team of 8 students in Capture The Flag competitions",
-        "Ranked top 50 in National Cyber League competition",
-        "Organize weekly security workshops and training sessions",
+        "Completed Naval Science and engineering-focused coursework emphasizing technical problem-solving and operational discipline.",
+        "Participated in rigorous summer training programs focused on leadership, systems thinking, and team coordination.",
+        "Developed experience working in structured, high-accountability environments requiring clear communication and reliability.",
+      ],
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "Play Date Care",
+      period: "May 2022 - Sep 2022",
+      description: [
+        "Developed UI flows for account onboarding and user dashboards.",
+        "Supported frontend feature implementation and improved user-facing application workflows.",
+        "Contributed to testing and QA automation to improve reliability across core application features.",
+      ],
+    },
+    {
+      role: "Web Development Intern",
+      company: "Àuda.B",
+      period: "Dec 2021 - Mar 2022",
+      description: [
+        "Built and customized Shopify web pages to support ecommerce product experiences.",
+        "Implemented product bundling features and other storefront functionality.",
+        "Collaborated on frontend updates to improve site usability and support business requirements.",
       ],
     },
   ];
@@ -87,8 +138,7 @@ export default function AboutPage() {
               {">"} About_Me
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              Cybersecurity enthusiast with a passion for building secure
-              systems and understanding how things break.
+              I'm a computer science student focused on cybersecurity, systems, and applied machine learning, with hands-on experience in IT support, security research, and full-stack development.
             </p>
           </div>
 
@@ -100,7 +150,7 @@ export default function AboutPage() {
               className="inline-flex items-center gap-2 rounded-lg border border-[#22c55e] px-6 py-3 font-mono text-sm text-[#22c55e] transition-all hover:bg-[#22c55e]/10 hover:shadow-[0_0_20px_rgba(34,197,94,0.3)]"
             >
               <Download className="h-4 w-4" />
-              Request Resume
+              Download Resume
             </a>
           </div>
 
@@ -116,7 +166,7 @@ export default function AboutPage() {
               </h3>
               <p className="mb-1 text-foreground">{education.degree}</p>
               <p className="mb-4 text-sm text-muted-foreground">
-                {education.year} • GPA: {education.gpa}
+                {education.year}
               </p>
 
               <div>

@@ -2,6 +2,7 @@ export const siteConfig = {
   name: "Yashica Prasad",
   email: "yashica.prasad@gmail.com",
   github: "https://github.com/yashica-prasad",
+  linkedin: "https://www.linkedin.com/in/yashicaprasad/",
   showContactForm: true,
 };
 

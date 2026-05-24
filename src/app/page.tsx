@@ -50,10 +50,10 @@ export default function Home() {
           </div>
 
           <p className="mb-12 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            Computer science and engineering student at UCLA, graduating{" "}
-            <span className="text-[#22c55e]">Fall 2026</span>. I build{" "}
-            <span className="text-purple-400">full-stack applications</span> and
-            enjoy working across web development, systems, and security.
+            Computer science student at UCLA, graduating{" "}
+            <span className="text-[#22c55e]">Spring 2026</span>. I build{" "}
+            <span className="text-purple-400">secure, practical software</span> across
+            full-stack development, systems, cybersecurity, and applied machine learning.
           </p>
 
           {/* CTA Buttons */}
