@@ -6,7 +6,7 @@ import {
   Download,
 } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
-import { siteConfig } from "@/config";
+import { withBasePath } from "@/config";
 
 export default function AboutPage() {
   const education = {
@@ -144,9 +144,8 @@ export default function AboutPage() {
 
           <div className="mb-12">
             <a
-              href={`mailto:${siteConfig.email}?subject=${encodeURIComponent("Resume Request")}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={withBasePath("/blog-images/Resume_Jun_14_2026.pdf")}
+              download
               className="inline-flex items-center gap-2 rounded-lg border border-[#22c55e] px-6 py-3 font-mono text-sm text-[#22c55e] transition-all hover:bg-[#22c55e]/10 hover:shadow-[0_0_20px_rgba(34,197,94,0.3)]"
             >
               <Download className="h-4 w-4" />
